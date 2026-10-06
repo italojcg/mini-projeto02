@@ -116,6 +116,9 @@ int main (){
         else if(N==3){
             trocaParesImpares(str);
         }
+        else if(N==4){
+            invertercaix(str);
+        }
         else if(N==5){
             scanf("%d", &n);
             rotacionar(str, n);
