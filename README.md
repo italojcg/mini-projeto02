@@ -19,7 +19,9 @@ Testando com arquivo de entrada (input.txt):
 
 2. Visão Geral do Sistema
 O programa realiza uma série de transformações e manipulações em uma string lida do usuário.
-Fluxo de Execução na Função main:Leitura da String: O programa inicia lendo uma string inicial de até 10.000 caracteres através do comando scanf(" %[^\n]%*c", str).
+Fluxo de Execução na Função main:
+
+Leitura da String: O programa inicia lendo uma string inicial de até 10.000 caracteres através do comando scanf(" %[^\n]%*c", str).
 
    Laço de Manipulação (while): Entra em um loop contínuo para processar os comandos numéricos de operação:
    
