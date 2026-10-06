@@ -16,6 +16,13 @@ void invert(char *str){
         end--;
     }
 }
+void invert_sub(char *start, int size) {
+    if (size <= 1) return;
+    char temp = start[size]; 
+    start[size] = '\0';
+    invert(start);
+    start[size] = temp; 
+}
 void deslocar(char *str, int n){
     while(*str!='\0'){
         if(*str>='A' && *str<= 'Z'){
@@ -63,7 +70,24 @@ void trocaParesImpares(char *str){
     }
 
 }
+void rotacionar (char *str, int n){
+    int len = 0;
+    char *ptr = str;
+    while(*ptr!='\0'){
+        len++;
+        ptr++;
+    }
+    if(len<=1) return;
+    n = n % len;
+    if(n<0){
+        n+=len;
+    }
+    if(n==0) return;
+    invert(str);
+    invert_sub(str, n);
+    invert_sub(str + n, len - n);
 
+}
 
 
 int main (){
@@ -81,6 +105,10 @@ int main (){
         }
         else if(N==3){
             trocaParesImpares(str);
+        }
+        else if(N==5){
+            scanf("%d", &n);
+            rotacionar(str, n);
         }
         else if(N==6){
             trocarMetades(str);
