@@ -41,11 +41,14 @@ Leitura da String: O programa inicia lendo uma string inicial de até 10.000 car
    
    Exibição do Resultado: Ao sair do laço, a string modificada é exibida no terminal através de printf("%s\n", str) e o programa encerra.
    
-4. Decisões de Implementação:
+4. Decisões de Implementação: 
  Abaixo está a documentação detalhada da lógica de cada função implementada no código:
+
 void invert(char *str)
     Objetivo: Inverter uma string inteira in-place usando aritmética de ponteiros.
+    
     Lógica: Posiciona o ponteiro end no último caractere válido (antes de \0) e o ponteiro start no início. Realiza a troca dos caracteres avançando start e retrocedendo end até se encontrarem no meio da string.
+    
 void invert_sub(char *start, int size) (Função Auxiliar):
     Objetivo: Inverter uma sub-string de tamanho size a partir de um ponteiro start.
     Lógica: Substitui temporariamente o caractere no índice size pelo caractere nulo \0 para marcar o fim da sub-string, chama a função invert() padrão e restaura o caractere original.
