@@ -22,15 +22,24 @@ O programa realiza uma série de transformações e manipulações em uma string
 Fluxo de Execução na Função main:Leitura da String: O programa inicia lendo uma string inicial de até 10.000 caracteres através do comando scanf(" %[^\n]%*c", str).
 
    Laço de Manipulação (while): Entra em um loop contínuo para processar os comandos numéricos de operação:
+   
    N = 1: Inverte toda a string.
+   
    N = 2: Lê um inteiro n e aplica a cifra/deslocamento nos caracteres (letras e números).
+   
    N = 3: Troca os caracteres das posições pares e ímpares adjacentes.
+   
    N = 4: Inverte a caixa das letras (maiúsculas viram minúsculas e vice-versa).
+   
    N = 5: Lê um inteiro n e rotaciona a string circularmente.
+   
    N = 6: Troca a primeira metade da string com a segunda metade.
+   
    Outro valor (N <= 0 ou N > 6): Interrompe o laço de repetição (break).
+   
    Exibição do Resultado: Ao sair do laço, a string modificada é exibida no terminal através de printf("%s\n", str) e o programa encerra.
-3. Decisões de Implementação:
+   
+4. Decisões de Implementação:
  Abaixo está a documentação detalhada da lógica de cada função implementada no código:
 void invert(char *str)
     Objetivo: Inverter uma string inteira in-place usando aritmética de ponteiros.
