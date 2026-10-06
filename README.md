@@ -1,5 +1,5 @@
 Aluno 01: Heitor dos Santos Brito
-Aluno 02:
+Aluno 02: Ítalo José de Castro Gontijo
 
 1º:Instruções de Compilação e Execução
 Para compilar e executar o programa no terminal utilizando o compilador gcc, siga os passos abaixo:
