@@ -8,6 +8,7 @@ gcc MP02.c -o programa.
 
 Execução:
 Linux / macOS / Git Bash:
+
 "./programa"
 Windows (Prompt de Comando / PowerShell):
 ".\programa.exe"
