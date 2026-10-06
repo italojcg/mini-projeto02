@@ -70,6 +70,16 @@ void trocaParesImpares(char *str){
     }
 
 }
+void inverterCaix(char *str) {
+    while (*str != '\0') {
+        if (*str >= 'a' && *str <= 'z') {
+            *str = *str - 'a' + 'A';
+        } else if (*str >= 'A' && *str <= 'Z') {
+            *str = *str - 'A' + 'a';
+        }
+        str++;
+    }
+}
 void rotacionar (char *str, int n){
     int len = 0;
     char *ptr = str;
