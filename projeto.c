@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+
 void invert(char *str){
     char *start=str;
     char *end=str;
