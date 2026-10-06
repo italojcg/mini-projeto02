@@ -1,4 +1,5 @@
 Aluno 01: Heitor dos Santos Brito
+
 Aluno 02: Ítalo José de Castro Gontijo
 
 1º:Instruções de Compilação e Execução
@@ -45,7 +46,7 @@ Leitura da String: O programa inicia lendo uma string inicial de até 10.000 car
  Abaixo está a documentação detalhada da lógica de cada função implementada no código:
 
 void invert(char *str)
-    Objetivo: Inverter uma string inteira in-place usando aritmética de ponteiros.
+    Objetivo: Inverter uma string inteira in-place usando aritmética de ponteiros:   
     
     Lógica: Posiciona o ponteiro end no último caractere válido (antes de \0) e o ponteiro start no início. Realiza a troca dos caracteres avançando start e retrocedendo end até se encontrarem no meio da string.
     
@@ -56,19 +57,23 @@ void invert_sub(char *start, int size) (Função Auxiliar):
 void deslocar(char *str, int n):
 
     Objetivo: Aplicar um deslocamento circular (estilo Cifra de César) nos caracteres da string.
-    Decisão para Positivos/Negativos: O ajuste (n % k + k) % k (onde k é o tamanho do alfabeto ou conjunto de dígitos) garante que rotações com valores negativos de n funcionem corretamente        sem resultar em módulos negativos no C.
-   Regras de Deslocamento:
-   Maiúsculas (A-Z): Alfabeto circular de 26 letras.
-   Minúsculas (a-z): Alfabeto circular de 26 letras.
-   Dígitos (0-9): Conjunto numérico circular de 10 dígitos.
+    Decisão para Positivos/Negativos: O ajuste (n % k + k) % k 
+    (onde k é o tamanho do alfabeto ou conjunto de dígitos) garante que rotações com valores negativos de n funcionem corretamente sem resultar em módulos negativos no C.
+    Regras de Deslocamento:
+    Maiúsculas (A-Z): Alfabeto circular de 26 letras.
+    Minúsculas (a-z): Alfabeto circular de 26 letras.
+    Dígitos (0-9): Conjunto numérico circular de 10 dígitos.
 void trocarMetades(char *str):
 
     Objetivo: Trocar a primeira metade da string com a segunda metade.
-    Lógica: Calcula o tamanho total tam. Se houver número ímpar de caracteres, o caractere central permanece fixo (calculado pelo deslocamento tam % 2). Dois ponteiros (p1 no início e p2 na segunda metade) trocam elementos pela metade das iterações.
+    Lógica: Calcula o tamanho total tam.
+    Se houver número ímpar de caracteres, o caractere central permanece fixo (calculado pelo deslocamento tam % 2). 
+    Dois ponteiros (p1 no início e p2 na segunda metade) trocam elementos pela metade das iterações.
 void trocaParesImpares(char *str):
 
     Objetivo: Permutar vizinhos adjacentes (índices 0 e 1, 2 e 3, etc.).
-    Lógica: Percorre a string de 2 em 2 posições (p += 2), realizando a troca entre o caractere atual *p e o seguinte *(p+1). Garante que não haja invasão de memória caso a string tenha tamanho ímpar.
+    Lógica: Percorre a string de 2 em 2 posições (p += 2), 
+    realizando a troca entre o caractere atual *p e o seguinte *(p+1). Garante que não haja invasão de memória caso a string tenha tamanho ímpar.
 void invertCaixa(char *str):
 
     Objetivo: Converter caracteres maiúsculos para minúsculos e vice-versa.
